@@ -5,7 +5,7 @@
 
 static ModularSystem SysMod;
 
-void modularInit() 
+void ethnicInit() 
 {
     SysMod.modules = (ModuleHash*)malloc(sizeof(ModuleHash));
     SysMod.size = 1;
@@ -13,7 +13,7 @@ void modularInit()
     archetype_system_init();
 }
 
-void modularExit()
+void ethnicExit()
 {
     archetype_system_destroy();
     for (unsigned int i = 0; i < SysMod.used; i++) {
